@@ -1,0 +1,110 @@
+		body{
+			width: 100vw;
+			display: flex;
+			flex-wrap: wrap; 
+			justify-content: center;
+			margin: 0;
+			padding: 70px 0 0 0; 
+			overflow-x: hidden; 
+			background-color: #fffffe;
+		}
+		footer{
+			margin-top: 100px;
+		}
+		.main{
+			width: 40%;
+			min-height: 80vh;
+			margin: 13px 0 12px 25px;
+			transition: transform 0.5s ease;
+		}
+		#topLeft{
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			background-color: #f1f1f1;
+		}
+		#topLeft .title{
+			width: 100%;
+			padding-left: 15%;
+			font-size: 400%;
+			font-family: Arial;
+			color: black;
+		}
+		.title{
+			width: 60%;
+			font-size: 400%;
+			margin-bottom: 0;
+			padding-left: 10%;
+			font-weight: bold;
+			font-family: Arial;
+			color: white;
+		}
+		.subtitle{
+			width: 60%;
+			padding-left: 10%;
+			font-size: 160%;
+			font-weight: bold;
+			color: white;
+			font-family: Arial;
+		}
+		#topLeftContent{
+			width: 85%;
+			font-size: 130%;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#topRight{
+			margin-top: 50px;
+			background-color: #3399ff; 
+		}		
+		#middleLeft{
+			background-color: #00cc00;
+		}		
+		#middleRight{
+			background-color: #ff00bf;
+		}	
+		#bottomLeft{
+			background-color:#ff5050; 
+		}
+		#bottomRight{
+			background-color: #bf00ff;
+		}		
+		.content{
+			width: 80%;
+			padding-left: 10%;
+			font-size: 110%;
+			font-family: 'Quicksand', sans-serif;
+			color: white;
+		}
+		#topRight:hover, #middleLeft:hover, #middleRight:hover, #bottomLeft:hover, #bottomRight:hover{
+			transform: translateY(-10px);
+			box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.8);
+		}
+		@media only screen and (max-width: 815px){
+
+			.main{
+				width: 100%;
+				height: auto; 
+				margin: 13px 10px 12px 10px;
+				padding-bottom: 30px;
+			}
+			#topLeft .title{
+				font-size: 250%; 
+			}
+			#topRight{
+				margin-top: 15px;
+			}
+			.title{
+				font-size: 300%;
+			}
+			.subtitle{
+				width: 90%;
+				padding-left: 7%;
+				font-size: 140%; 
+			}
+			#topLeftContent, .content{
+				width: 90%;
+				padding-left: 7%;
+			}
+		}

@@ -1,0 +1,159 @@
+		body{
+			width: 100vw;
+			display: flex;
+			flex-wrap: wrap; 
+			justify-content: space-around;
+			margin: 0;
+			padding: 70px 0 0 0; 
+			overflow-x: hidden; 
+			background-color: #fffffe;
+		}
+		#titleContainer{
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 60%;
+			height: 35%;
+			top: 15%;
+			left: 10%;
+			font-size: 350%;
+			font-weight: 700;
+			color: white;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#underlineBlue{
+			width: 45%;
+			height: 3px;
+			position: absolute;
+			bottom: 0;
+			background-color: lightblue;
+		}
+		#topWrapper{
+			width: 100%;
+			height: 55vh;
+			display: flex;
+		}
+		#topLeft{
+			width: 40%;
+			height: 100%;
+			background-color: black;
+		}
+		#topRight{
+			width: 60%;
+		}
+		#imageTop{
+			width: 100%;
+			height: 100%;
+		}
+		#main{
+			width: 100%;
+			padding: 10px 0;
+			display: flex;
+			justify-content: space-around;
+		}
+		#team{
+			width: 50%;
+		}
+		#text{
+			width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		#content{
+			width: 75%;
+			margin-bottom: 50px;
+			font-size: 125%;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#contentMain{
+			width: 85%;
+			margin-bottom: 50px;
+			font-size: 125%;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#content span{
+			color: red;
+		}
+		#contentTitle{
+			width: 75%;
+			font-size: 150%; 
+			font-weight: bold;
+			font-family: 'Didact Gothic', sans-serif;
+		}
+		#contentMainTitle{
+			font-size: 125%;
+			font-weight: bold;
+			font-family: 'Didact Gothic', sans-serif;
+		}
+		#offices{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding-bottom: 50px; 
+		}
+		#offices img{
+			width: 20%;
+			margin: 5px;
+		}
+		@media only screen and (max-width: 815px){
+
+			#topWrapper{
+				width: 100%;
+				height: initial;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+			}
+			#topLeft{
+				width: 100%;
+				height: 25vh;
+				background-color: black;
+			}
+			#topRight{
+				width: 100%;
+				height: 25vh;
+				background-color: #87EBE1;
+			}
+			#titleContainer{
+				height: 60%;
+				font-size: 250%;
+			}
+
+			/* Main section */
+
+			#main{
+				flex-wrap: wrap;
+			}
+			#team{
+				width: 100%;
+			}
+			#text{
+				width: 100%;	
+			}
+			#content{
+				width: 90%;
+				font-size: 120%;
+				margin-bottom: 0;
+				font-family: 'Quicksand', sans-serif;
+			}
+			#contentTitle{
+				margin-bottom: 0;
+				text-align: center;
+			}
+			#contentMainTitle{
+				font-size: 125%;
+				font-weight: bold;
+				text-align: center;
+				font-family: 'Didact Gothic', sans-serif;
+			}
+			#offices{
+				padding-bottom: 0;
+			}
+			#offices img{
+				width: 30%;
+				margin: 5px;
+			}
+		}

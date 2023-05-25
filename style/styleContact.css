@@ -1,0 +1,165 @@
+		body{
+			width: 100vw;
+			display: flex;
+			flex-wrap: wrap; 
+			justify-content: space-around;
+			margin: 0;
+			padding-top: 70px; 
+			overflow-x: hidden; 
+			background-color: #fffffe;
+		}
+		#titleContainer{
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 50%;
+			height: 35%;
+			top: 15%;
+			left: 10%;
+			font-size: 350%;
+			font-weight: 700;
+			color: white;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#underlineBlue{
+			width: 45%;
+			height: 3px;
+			position: absolute;
+			bottom: 0;
+			background-color: lightblue;
+		}
+		#topWrapper{
+			width: 100%;
+			height: 55vh;
+			display: flex;
+		}
+		#topLeft{
+			width: 40%;
+			height: 100%;
+			background-color: black;
+		}
+		#topRight{
+			width: 60%;
+			height: 100%;
+		}
+		#imageTop{
+			width: 100%;
+			height: 100%;
+		}
+
+		/* Main segment */
+
+		#main{
+			width: 100%;
+			margin-top: 50px;
+			display: flex; 
+			flex-wrap: wrap;
+		}
+		#content{
+			width: 100%;
+		}
+		p{
+			width: 80%;
+			font-size: 110%;
+			margin: auto;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#contactForm{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+		}
+		span{
+			color: red;
+		}
+
+		/* Contact form section */
+
+		#wrapper{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+		.contact-form{
+			width: 40%;
+			height: 70vh; 
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around; 
+		}
+		input{
+			width: 85%;
+			height: 10%;
+			border-left: none;
+			border-right: none;
+			border-top: none;
+			border-bottom: solid black 1px;
+			font-family: Arial;
+		}
+		textarea{
+			width: 85%; 
+			height: 40%;
+			margin: 20px 0;
+			font-family: Arial;
+			border: solid black 1px;
+		}
+		input:focus, textarea:focus{
+			outline: none;
+		}
+		button{
+			width: 20%;
+			height: 8%;
+			position: relative;
+			right: 33%;
+			border: solid black 1px; 
+		}
+		@media only screen and (max-width: 815px){
+
+			footer{
+				margin-top: 0;
+			}
+			#wrapper{
+				position: relative;
+				bottom: 50px;
+			}
+			#topWrapper{
+				width: 100%;
+				height: initial;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+			}
+			#topLeft{
+				width: 100%;
+				height: 25vh;
+				background-color: black;
+			}
+			#topRight{
+				width: 100%;
+				height: 30vh;
+				background-color: #87EBE1;
+			}
+			#titleContainer{
+				height: 60%;
+				font-size: 250%;
+			}
+
+			p{
+				font-size: 100%;
+				width: 90%;
+			}
+			.contact-form{
+				width: 100%;
+				height: 70vh; 
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-around; 
+			}
+			#footerRight{
+				padding: 40px 0;
+				height: auto;
+			}
+		}

@@ -1,0 +1,185 @@
+	header{
+		position: fixed;
+		top: 0; 
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 70px;
+		width: 100vw;
+		background-color: #fffffe; 
+	}
+	a{
+		text-decoration: none;
+		padding: 0;
+		margin: 0;
+	}
+	.dropdown{
+		position: relative;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.dropdownMenu{
+		position: absolute;
+		width: auto; 
+		top: 100%; 
+		background-color: white;
+		padding: 3px;
+		text-align: center;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+		display: none;
+	}
+	.dropdown:hover .dropdownMenu{
+		display: block;
+		border-top: solid lightblue 2px;
+	}
+	.dropdownMenu a{
+		line-height: 30px;
+		width: 200px; 
+		display: block;
+		color: black;
+		font-size: 90%;
+		font-family: 'Roboto Serif', serif;
+	}
+	.dropdownMenu a:hover{
+		background-color: #f1f1f1;
+	}
+	#logo{
+		width: 4%;
+		position: absolute; 
+		align-self: center;
+		top: 2px; 
+		left: 8%; 
+	}
+	.nav{ 
+		position: relative;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		text-align: center;
+		font-family: 'DM Sans', sans-serif; 
+		color: black; 
+	}
+	.blue{
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 2px;
+		background-color: lightblue;
+		transition: all 0.4s ease;
+	}
+	.nav:hover .blue{
+		width: 100%;
+	}
+	#mobileTop, #mobileMenu{
+		display: none;
+	}
+	@media only screen and (max-width: 815px){
+			header{
+				display: none;
+			}
+			#mobileTop{
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 10vh;
+				z-index: 1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: white;
+				overflow: hidden;
+			}
+			#logoContainer{
+				width: 14%;
+				display: flex;
+				justify-content: center;
+			}
+			img{
+				width: 85%;
+			}
+			#hamburger{
+				position: absolute;
+				left: 15px;
+				width: 50px;
+				height: 9vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.hamburgerClosed{
+				width: 60%;
+				height: 3px;
+				margin-top: 4px;
+				background-color: black;
+				transition: all 0.3s ease;
+			}
+			#mobileMenu{
+				position: fixed;
+				top: 10vh;
+				left: 0;
+				z-index: 1;
+				height: 100vh;
+				margin: 0;
+				padding-top: 20px;
+				overflow: hidden;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				list-style-type: none;
+				background-color: white;
+				transition: all 0.3s ease;
+			}
+			#companyNested, #solutionsNested{
+				overflow: hidden;
+				transition: all 0.5s ease;
+			}
+			.nestedList{
+				list-style-type: none;
+				height: 0;
+				opacity: 0;
+			}
+			.nestedList a, .nestedListOpen a{
+				font-family: 'Roboto Serif', serif;
+			}
+			li{
+				width: 100%;
+			}
+			li a{
+				font-family: 'DM Sans', sans-serif;
+				color: black;
+				line-height: 30px;
+			}
+
+			/* Show / hide menu and submenus */
+			
+			.mobileMenuClosed{
+				width: 0;
+				opacity: 0;
+			}
+			.mobileMenuOpen{
+				width: 100%;
+				opacity: 1;
+			}
+			.nestedListOpen{
+				list-style-type: none;
+				height: 145px; 
+				opacity: 1;
+			}
+			.hamburgerTopOpen{
+				transform: rotate(45deg) translate(5px, 5px);
+			}
+			.hamburgerMiddleOpen{
+				opacity: 0;
+			}
+			.hamburgerBottomOpen{
+				transform: rotate(-45deg) translate(5px, -5px);
+			}
+		}
+		

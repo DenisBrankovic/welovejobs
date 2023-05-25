@@ -1,0 +1,291 @@
+		body{
+			width: 100vw;
+			display: flex;
+			flex-wrap: wrap; 
+			justify-content: space-around;
+			margin: 0;
+			padding-top: 70px; 
+			overflow-x: hidden; 
+			background-color: #fffffe;
+		}
+		#titleContainer{
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 50%;
+			height: 35%;
+			top: 15%;
+			left: 10%;
+			font-size: 350%;
+			font-weight: 700;
+			color: white;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#underlineBlue{
+			width: 45%;
+			height: 3px;
+			position: absolute;
+			bottom: 0;
+			background-color: lightblue;
+		}
+		#topWrapper{
+			width: 100%;
+			height: 55vh;
+			display: flex;
+		}
+		#topLeft{
+			width: 40%;
+			height: 100%;
+			background-color: black;
+		}
+		#topRight{
+			width: 60%;
+		}
+		#imageTop{
+			width: 100%;
+			height: 100%;
+		}
+		.mainContainer{
+			width: 100%;
+			display: flex;
+		}
+		.mainLeft{
+			width: 35%;
+			height: 70vh;
+			padding-top: 10%;
+			padding-left: 50px;
+		}
+		.mainRight{
+			width: 65%;
+			height: 70vh;
+			padding-top: 10%;
+			display: flex;
+		}
+		.mainLeftMiddle{
+			width: 35%;
+			height: 65vh;
+			padding-left: 50px;
+		}
+		.mainRightMiddle{
+			width: 65%;
+			height: 65vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center; 
+		}
+		h1{
+			font-size: 400%;
+			font-family: Arial;
+		}
+		.mainLeft p, .mainLeftMiddle p{
+			font-size: 110%;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#circleGreen{
+			width: 250px;
+			height: 250px;
+			border-radius: 50%;
+			position: relative;
+			left: 15%;
+			top: 25%;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			background-color: #66ff33;
+		}
+		#circlePurple{
+			width: 400px;
+			height: 400px;
+			border-radius: 50%;
+			position: relative;
+			left: 25%;
+			bottom: 15%;
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			background-color: #c61aff; 
+		}
+		#circleGreen p, #circlePurple p{
+			width: 100%;
+			text-align: center;
+		}
+
+		/* Chart */
+		
+		.topChartNumber{
+			line-height: 0;
+			position: relative;
+			top: 15%;
+			font-size: 300%;
+			font-family: 'Ultra', serif;
+			color: white;
+		}
+		.topChartYear{
+			position: relative;
+			bottom: 15%;
+			font-family: 'Didact Gothic', sans-serif;
+			font-size: 110%;
+			font-weight: bold;
+		}		
+		#chartMiddle{
+			width: 75%;
+			height: 55%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			border-bottom: solid black 2px;
+		}
+		.percentageMiddle{
+			position: relative;
+			top: -50px;
+			font-family: 'Quicksand', sans-serif;
+			color: black; 
+		}
+		.yearMiddle{
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: -45px;
+			font-family: 'Quicksand', sans-serif;
+			color: black; 
+		}
+		.chartMiddleBlack{
+			position: relative;
+			width: 10%;
+			color: white;
+			text-align: center;
+			background-color: black;
+		}
+		.chartMiddleWhite{
+			width: 10%;
+			height: 100%;
+			margin: 0 1px 0 1px;
+		}
+		#middleChart1{
+			height: 55%;
+		}
+		#middleChart2{
+			height: 60%;
+		}
+		#middleChart3{
+			height: 65%;
+		}
+		#middleChart4{
+			height: 72%;
+		}
+		@media only screen and (max-width: 815px){
+
+			#topWrapper{
+				width: 100%;
+				height: initial;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: flex-start;
+			}
+			#topLeft{
+				width: 100%;
+				height: 25vh;
+				background-color: black;
+			}
+			#topRight{
+				width: 100%;
+				height: 25vh;
+				background-color: #87EBE1;
+			}
+			#titleContainer{
+				height: 60%;
+				font-size: 250%;
+			}
+
+			/* Main section mobile */
+
+			.mainContainer{
+				flex-wrap: wrap;
+			}
+			h1{
+				font-size: 170%;
+				text-align: center;
+				margin-bottom: 0;
+			}
+			p{
+				width: 90%;
+
+			}
+			.mainLeft{
+				width: 100%;
+				height: auto;
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			.mainRight{
+				justify-content: space-between;
+				align-items: flex-end;
+				width: 100%; 
+				height: 40vh;
+				padding: 0;
+			}
+			.mainLeftMiddle{
+				width: 100%;
+				height: auto; 
+				padding: 0;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			.mainLeftMiddle p{
+				width: 90%;
+			}
+			.mainRightMiddle{
+				width: 100%;
+				height: 45vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				align-items: center; 
+				padding: 0;
+			}
+			#circleGreen{
+				position: static;
+				width: 120px;
+				height: 120px;
+				margin: 0 2% 15% 10px;
+			}
+			#numberGreen, #numberPurple{
+				font-size: 150%;
+			}
+			#circlePurple{
+				position: static;
+				width: 150px;
+				height: 150px;
+				margin: 10% 12px 25% 10px;
+			}
+			.chartMiddleBlack{
+				width: 20%;
+			}
+			.chartMiddleWhite{
+				width: 10%;
+				height: 100%;
+				margin: 0 1px 0 1px;
+			}
+			#middleChart1{
+				height: 35%;
+			}
+			#middleChart2{
+				height: 52%;
+			}
+			#middleChart3{
+				height: 63%;
+			}
+			#middleChart4{
+				height: 80%;
+			}
+			#chartMiddle{
+				height: 90%;
+				width: 90%;
+				padding: 0 15px;
+			}
+		}

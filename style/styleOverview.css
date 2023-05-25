@@ -1,0 +1,85 @@
+	body{
+		width: 100vw;
+		display: flex;
+		flex-wrap: wrap; 
+		justify-content: space-around;
+		margin: 0;
+		padding-top: 70px; 
+		overflow-x: hidden; 
+		background-color: #fffffe;
+	}
+	#mainTitle{
+		position: absolute;
+		top: 50px;
+		width: 100%;
+		font-size: 500%; 
+		font-family: Arial;
+		color: white;
+		text-align: center;
+	}
+	#top{
+		width: 100%;
+	}
+	#overviewTitle{
+		width: 100%;
+		font-size: 330%;
+		text-align: center;
+		font-family: Arial; 
+	}
+	#main{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		padding-bottom: 100px;
+	}
+	#main p{
+		width: 40%;
+		text-align: center;
+		font-size: 110%;
+		font-family: 'Quicksand', sans-serif;
+	}
+	#videoWrapper{
+		position: relative;
+		width: 100%;
+	}
+	#city{
+		position: relative;
+		width: 100%;
+	}
+	#textOverVideo{
+		position: absolute;
+		z-index: 1;
+		top: 25%;
+		left: 15%;
+		width: auto;
+		color: #99ff33; 
+		font-size: 200%;
+		font-weight: bold;
+		font-family: 'Nixie One', cursive; 
+		transition: all 0.6s ease;
+	}
+	#textOverVideo:hover{
+		color: #ffff00; 
+	}
+	@media only screen and (max-width: 815px){
+		
+		#top img{
+			width: 100%;
+		}
+		#mainTitle{
+			font-size: 150%;
+		}
+		#overviewTitle{
+			font-size: 150%;
+		}
+		#main{
+			padding-bottom: 25px;
+		}
+		#main p{
+			width: 90%;
+			font-size: 100%;
+		}
+		#textOverVideo{
+			font-size: 100%;
+		}
+	}

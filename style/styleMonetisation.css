@@ -1,0 +1,275 @@
+		body{
+			width: 100vw;
+			display: flex;
+			flex-wrap: wrap; 
+			justify-content: space-around;
+			margin: 0;
+			padding: 70px 0 0 0; 
+			overflow-x: hidden; 
+			background-color: #fffffe;
+		}
+		#titleContainer{
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 60%;
+			height: 55%;
+			top: 15%;
+			left: 10%;
+			font-size: 350%;
+			font-weight: 700;
+			color: black;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#underlineBlue{
+			width: 45%;
+			height: 3px;
+			position: absolute;
+			bottom: 0;
+			background-color: black;
+		}
+		#topWrapper{
+			width: 100%;
+			height: 45vh;
+			display: flex;
+		}
+		#topLeft{
+			width: 40%;
+			height: 100%;
+			background-color: lightblue;
+		}
+		#topRight{
+			width: 60%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: black;
+		}
+		#topRight p{
+			color: white;
+			width: 90%;
+			font-size: 250%;
+			font-weight: 700;
+			font-family: 'Quicksand', sans-serif;
+		}
+
+		/* Main section */
+
+		.main{
+			width: 100%;
+			height: 70vh;
+			display: flex; 
+			margin-bottom: 30px;
+		}
+		.innerLeft{
+			width: 50%;
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+		p{
+			width: 90%;
+			font-size: 130%;
+			font-family: 'Quicksand', sans-serif;
+		}
+		h1{
+			position: absolute;
+			top: 35px;
+			width: 100%;
+			font-family: 'Didact Gothic', sans-serif;
+			font-weight: bold;
+		}
+		.innerRight{
+			position: relative;
+			width: 50%;
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: flex-end;
+		}
+		#circleSmall{
+			width: 225px;
+			height: 225px;
+			border-radius: 50%;
+			margin-right: 50px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			bottom: 15%;
+			background-color: grey;
+		}
+		#circleBig{
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			bottom: 15%;
+			background-color: blue;
+		}
+		.billions{
+			width: 100%;
+			text-align: center;
+			align-self: center;
+			color: white;
+			font-family: 'Ultra', serif;
+			font-size: 250%;
+		}
+		h3{
+			position: absolute;
+			bottom: -60px;
+			width: 100%;
+			text-align: center;
+			font-family: Arial;
+			font-size: 150%;
+			font-weight: bold;
+		}
+		.titleInner{
+			font-size: 350%;
+			margin: 0;
+			font-family: Arial;
+			font-weight: bold;
+			text-align: left;
+		}
+
+		/* Three offers section */
+
+		#mainBottom{
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			margin-bottom: 100px;
+		}
+		#mainBottomTitle{
+			font-size: 370%;
+			font-weight: bold;
+			margin-bottom: 30px;
+			padding: 0;
+			font-family: Arial;
+		}
+		.threeOffers{
+			width: 30%;
+			height: 70%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around; 
+			align-items: center;
+		}
+		.threeOffersInner{
+			width: 30%;
+			height: 150px;
+		}
+		#webImage, #searchImage{
+			width: 120px;
+		}
+		#mobileImage{
+			width: 90px;
+		}
+		h2{
+			width: 100%;
+			text-align: center;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.threeOffersText{
+			width: 90%;
+			font-size: 110%;
+			text-align: center;
+		}
+		footer{
+			margin-top: 50px;
+		}
+		@media only screen and (max-width: 815px){
+
+			#topWrapper{
+				width: 100%;
+				height: initial;
+				flex-wrap: wrap;
+			}
+			#topLeft{
+				width: 100%;
+				height: 25vh;
+			}
+			#titleContainer{
+				font-size: 200%;
+			}
+			#topRight{
+				width: 100%;
+			}
+			#topRight p{
+				font-size: 200%;
+			}
+
+			/* Main section mobile */
+
+			.main{
+				height: auto;
+				flex-wrap: wrap;
+				margin-bottom: 0; 
+			}
+			.innerLeft{
+				width: 100%;
+				height: auto;
+				
+			}
+			p{
+				font-size: 110%;
+			}
+			.innerRight{
+				width: 100%;
+				height: 50vh; 
+			}
+			h1{
+				width: 100%;
+				margin-top: 0;
+				font-size: 150%;
+				text-align: center;
+			}
+			h3{
+				font-size: 130%;
+			}
+			#circleSmall{
+				width: 120px;
+				height: 120px;
+			}
+			#circleBig{
+				width: 150px;
+				height: 150px;
+			}
+			.billions{
+				font-size: 200%;
+			}
+			.titleInner{
+				font-size: 150%;
+				margin: 20px 0;
+			}
+			/* Three offers section */
+
+			#mainBottomTitle{
+				margin-top: 30px;
+				margin-bottom: 50px;
+				font-size: 170%;
+				text-align: center;
+			}
+			.threeOffers{
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: center; 
+				align-items: center;
+			}
+			.threeOffersInner{
+				width: 100%;
+				height: auto; 
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}

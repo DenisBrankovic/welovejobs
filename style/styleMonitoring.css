@@ -1,0 +1,427 @@
+		body{
+			width: 100vw;
+			display: flex;
+			flex-wrap: wrap; 
+			justify-content: space-around;
+			margin: 0;
+			padding: 70px 0 0 0; 
+			overflow-x: hidden; 
+			background-color: #fffffe;
+		}
+		#titleContainer{
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 60%;
+			height: 70%;
+			top: 15%;
+			left: 10%;
+			font-size: 350%;
+			font-weight: 700;
+			color: black;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#underlineBlue{
+			width: 45%;
+			height: 3px;
+			position: absolute;
+			bottom: 0;
+			background-color: black;
+		}
+		#topWrapper{
+			width: 100%;
+			height: 45vh;
+			display: flex;
+		}
+		#topLeft{
+			width: 40%;
+			height: 100%;
+			background-color: lightblue;
+		}
+		#topRight{
+			width: 60%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: black;
+		}
+		#topRight p{
+			color: white;
+			width: 90%;
+			font-size: 250%;
+			font-weight: 700;
+			font-family: 'Quicksand', sans-serif;
+		}
+
+		/* Main section */
+
+		.main{
+			width: 100%;
+			height: 70vh;
+			display: flex; 
+		}
+		#mainTop{
+			height: 55vh;
+		}
+		.innerLeft{
+			width: 50%;
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: space-around;
+		}
+		span{
+			font-size: 120%;
+			font-weight: bold;
+			font-family: Arial;
+		}
+		p{
+			width: 90%;
+			font-size: 130%;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.innerRight{
+			width: 50%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between; 
+			align-items: center; 
+		}
+		.innerRight h2{
+			width: 100%; 
+			text-align: center; 
+			font-weight: bold;
+			font-family: Arial; 
+		}
+		#innerRightImg{
+			width: 70%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+		#innerRightImg img{
+			width: 100%;
+		}
+		#innerRightTxt{
+			width: 40%;
+			height: 100%;
+			padding-top: 30px; 
+			display: flex;
+			flex-direction: column;
+			justify-content: center; 
+		}
+
+		/* Chart */
+
+		.topChartNumber{
+			line-height: 0;
+			position: relative;
+			top: 15%;
+			font-size: 300%;
+			font-family: 'Ultra', serif;
+			color: white;
+		}
+		.topChartYear{
+			position: relative;
+			bottom: 15%;
+			font-family: 'Didact Gothic', sans-serif;
+			font-size: 110%;
+			font-weight: bold;
+		}		
+		#chartMiddle{
+			width: 75%;
+			height: 60%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			border-bottom: solid black 2px;
+		}
+		.percentageMiddle{
+			position: relative;
+			top: -50px;
+			font-family: 'Quicksand', sans-serif;
+			color: black; 
+		}
+		.yearMiddle{
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: -45px;
+			font-family: 'Quicksand', sans-serif;
+			color: black; 
+			
+		}
+		.chartMiddleBlack{
+			position: relative;
+			width: 15%;
+			color: white;
+			text-align: center;
+			background-color: black;
+		}
+		.chartMiddleWhite{
+			width: 10%;
+			height: 100%;
+			margin: 0 1px 0 1px;
+		}
+		#middleChart1{
+			height: 40%;
+		}
+		#middleChart2{
+			height: 60%;
+		}
+		#middleChart4{
+			height: 100%;
+		}
+
+		/* Main second section */
+
+		#mainSecond{
+			width: 100%;
+			height: 70vh;
+			margin-top: 100px;
+			padding-bottom: 100px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			background-color: #f1f1f1;
+		}
+		#mainSecondTitle{
+			font-size: 370%;
+			font-weight: bold;
+			margin: 30px 0;
+			padding: 0;
+			font-family: Arial;
+		}
+		.threeOffers{
+			width: 30%;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: white; 
+			box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+		}
+		.threeOffersInner{
+			width: 100%;
+			height: 40%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#databaseImg{
+			width: 20%;
+			height: auto;
+		}
+		#directionImg{
+			width: 37%;
+		}
+		#automationImg{
+			width: 37%;
+		}
+		h2{
+			width: 100%;
+			text-align: center;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.threeOffersText{
+			width: 90%;
+			font-size: 110%;
+			text-align: center;
+		}
+
+		/* Main bottom section */
+
+		#mainBottom{
+			width: 100%;
+			height: 40vh;
+			display: flex;
+			justify-content: space-around;
+		}
+		.mainBottomInner{
+			width: 50%;
+			height: 100%; 
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#mainBottomTitle{
+			font-size: 300%;
+			font-weight: bold;
+			text-align: center;
+			font-family: Arial;
+		}
+
+		/* Main lower section */
+
+		#mainLower{
+			width: 100%;
+			padding: 40px 30px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			background-color: #f1f1f1;
+		}
+		.review{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 45%;
+			height: 60vh;
+			box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5); 
+			background-color: white;
+		}
+		.review p{
+			width: 90%;
+			font-weight: bold;
+			font-family: 'Didact Gothic', sans-serif; 
+		}
+		.reviewer{
+			font-size: 100%; 
+			font-weight: normal;
+			font-family: 'Didact Gothic', sans-serif;
+		}
+		.reviewerFunction{
+			font-size: 90%;
+			font-weight: normal;
+			font-family: 'Nixie One', cursive;
+		}
+		.quotesOpen{
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			width: 5%;
+		}
+		.quotesClosed{
+			position: absolute;
+			bottom: 15%;
+			right: 30px;
+			width: 5%;
+		}
+		@media only screen and (max-width: 815px){
+
+			#topWrapper{
+				width: 100%;
+				height: initial;
+				flex-wrap: wrap;
+			}
+			#topLeft{
+				width: 100%;
+				height: 25vh;
+			}
+			#titleContainer{
+				font-size: 200%;
+			}
+			#topRight{
+				width: 100%;
+			}
+			#topRight p{
+				font-size: 200%;
+			}
+
+			/* Main section mobile */
+
+			.main{
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			#mainTop{
+				height: auto;
+			}
+			.innerLeft{
+				width: 100%;
+				height: auto;
+			}
+			.innerRight{
+				width: 100%;
+				height: 50vh;
+			}
+			p{
+				font-size: 120%;
+			}
+			#mainSecond{
+				width: 100%;
+				height: auto;
+				margin-bottom: 0;
+				padding: 0;
+			}
+			#mainSecondTitle{
+				font-size: 200%;
+				text-align: center;
+			}
+			.threeOffers{
+				width: 90%;
+				height: auto;
+				margin-bottom: 10px;
+				padding-top: 20px;
+			}
+			#databaseImg{
+				width: 25%;
+			}
+
+			/* Main bottom section */
+
+			#mainBottom{
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+			.mainBottomInner{
+				width: 100%;
+				height: auto;  
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#mainBottomTitle{
+				font-size: 200%;
+				font-weight: bold;
+				text-align: center;
+				font-family: Arial;
+			}
+
+			/* Main lower section */
+
+			#mainLower{
+				width: 100%;
+				padding: 40px 30px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				background-color: #f1f1f1;
+			}
+			.review{
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				height: auto;
+				margin-bottom: 20px;
+				padding: 20px; 
+				box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5); 
+				background-color: white;
+			}
+			.review p{
+				width: 80%;
+				height: 80%;
+				font-size: 95%;
+				font-weight: bold;
+				font-family: 'Didact Gothic', sans-serif; 
+			}
+			.quotesOpen{
+				top: 25px;
+				left: 15px;
+			}
+			.quotesClosed{
+				right: 15px;
+				bottom: 40px;
+			}
+		}

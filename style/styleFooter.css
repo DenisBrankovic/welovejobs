@@ -1,0 +1,131 @@
+footer{
+	position: relative;
+	width: 100%;
+	height: 25vh;
+	margin-top: 100px;
+	padding-top: 40px; 
+	padding-bottom: 50px;
+	display: flex;
+}
+#footerTop{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 2px;
+	background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}
+#footerLeft{
+	height: 100%;
+	width: 20%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.footerSocialUpper, .footerSocialLower{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+}
+.footerSocialUpper{
+	height: 60%;
+}
+.footerSocialUpper img{
+	width: 60px;
+}
+.footerSocialLower img{
+	width: 40px;
+	height: 40px;
+	margin: 3px;
+}
+#footerMidLeft{
+	height: 100%;
+	width: 20%;
+	padding-top: 8px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+#footerMidLeft a{
+	color: black;
+	font-family: 'DM Sans', sans-serif;
+}
+#footerMidRight{
+	height: 100%;
+	width: 30%;
+	display: flex;
+}
+.footerInner{
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center; 
+}
+.footerInner a{
+	width: 100%;
+	text-align: center;
+	color: grey;
+	font-family: 'DM Sans', sans-serif;
+}
+#footerInvestors{
+	font-family: 'DM Sans', sans-serif;
+}
+#footerRight{
+	height: 100%;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	color: grey;
+}
+footer p{
+	font-family: "Times New Roman";
+	font-size: 100%;
+}
+@media only screen and (max-width: 815px){
+	
+	footer{
+		display: flex;
+		flex-wrap: wrap;
+		height: 50vh;
+	}
+	#footerLeft{
+		height: 100px;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.footerSocialUpper a{
+		width: auto;
+	}
+	.footerSocialLower{
+		margin-top: 20px;
+	}
+	#footerMidLeft{
+		height: initial;
+		width: 100%; 
+		margin-top: 35px;
+		padding-top: 8px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+	#footerMidLeft a{
+		margin: 7px;
+	}
+	#footerMidRight{
+		display: none;
+	}
+	#footerRight{
+		width: 100%;
+		margin-top: 15px;
+		padding-top: 15px;
+		border-top: solid black 1px;
+	}
+	#footerRight p{
+		text-align: center;
+	}
+}

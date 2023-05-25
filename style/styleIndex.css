@@ -1,0 +1,89 @@
+body{
+		width: 100vw;
+		display: flex;
+		flex-wrap: wrap; 
+		justify-content: space-around;
+		margin: 0;
+		padding: 200px 0 0 0;
+		overflow-x: hidden; 
+		background-color: #fffffe;
+	}
+	.titleContainer{
+		width: 40%;
+		margin-bottom: 100px;
+		padding-top: 50px;
+	}
+	.imgContainer{
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		padding-top: 50px; 
+	}
+	.subtitle{
+		font-family: 'Ultra', serif; 
+		font-size: 150%; 
+	}
+	.title{
+		font-family: 'Ultra', serif;
+		font-size: 500%;
+		margin: 0;
+	}
+	#planning{
+		width: 120%;
+	}
+	#analysisMobile{
+		display: none;
+	}
+	#implementation{
+		width: 70%;
+		position: relative;
+		left: 50px;
+	}
+	#solutionMobile{
+		display: none;
+	}
+	.content{
+		font-family: 'Quicksand', sans-serif;
+		font-size: 120%;
+	}
+	.picture{
+		width: 100%;
+	}
+	@media only screen and (max-width: 815px){
+		
+		body{
+			padding-top: 100px;
+		}
+		.titleContainer{
+			width: 100%;
+			padding: 0;
+			margin: 20px;
+		}
+		.title{
+			font-size: 250%;
+		}
+		.imgContainer{
+			width: 100%;
+		}
+		#analysisMobile{
+			display: initial;
+			width: 100%;
+			margin: 20px;
+		}
+		#analysis{
+			display: none;
+		}
+		#implementationMobile{
+			font-size: 200%;
+		}
+		#implementation{
+			position: static;
+			width: 90%;
+		}
+		#solution{
+			display: none;
+		}
+		#solutionMobile{
+			display: initial;
+		}
+	}

@@ -1,0 +1,340 @@
+		body{
+			width: 100vw;
+			display: flex;
+			flex-wrap: wrap; 
+			justify-content: space-around;
+			margin: 0;
+			padding: 70px 0 0 0; 
+			overflow-x: hidden; 
+			background-color: #fffffe;
+		}
+		#titleContainer{
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 60%;
+			height: 55%;
+			top: 15%;
+			left: 10%;
+			font-size: 350%;
+			font-weight: 700;
+			color: black;
+			font-family: 'Quicksand', sans-serif;
+		}
+		#underlineBlue{
+			width: 45%;
+			height: 3px;
+			position: absolute;
+			bottom: 0;
+			background-color: black;
+		}
+		#topWrapper{
+			width: 100%;
+			height: 45vh;
+			display: flex;
+		}
+		#topLeft{
+			width: 40%;
+			height: 100%;
+			background-color: lightblue;
+		}
+		#topRight{
+			width: 60%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: black;
+		}
+		#topRight p{
+			color: white;
+			width: 90%;
+			font-size: 250%;
+			font-weight: 700;
+			font-family: 'Quicksand', sans-serif;
+		}
+
+		/* Main section */
+
+		.main{
+			width: 100%;
+			height: 70vh;
+			display: flex; 
+		}
+		.innerLeft{
+			width: 50%;
+			height: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+		span{
+			font-size: 120%;
+			font-weight: bold;
+			font-family: Arial;
+		}
+		p{
+			width: 90%;
+			font-size: 130%;
+			font-family: 'Quicksand', sans-serif;
+		}
+		.innerRight{
+			width: 50%;
+			height: 100%;
+			display: flex;
+		}
+		#innerRightImg{
+			width: 70%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+		#innerRightImg img{
+			width: 100%;
+		}
+		#innerRightTxt{
+			width: 40%;
+			height: 100%;
+			padding-top: 30px; 
+			display: flex;
+			flex-direction: column;
+			justify-content: center; 
+		}
+		.revenue{
+			width: 100%;
+			height: 30%;
+		}
+		.revenue p{
+			font-family: 'Didact Gothic', sans-serif;
+			font-weight: bold; 
+			text-align: center;
+		}
+		.revenue span{
+			font-size: 250%;
+			font-family: Arial;
+			color: lightblue;
+		}
+		.titleInner{
+			font-size: 350%;
+			margin: 0;
+			font-family: Arial;
+			font-weight: bold;
+			text-align: left;
+		}
+		#mainLower{
+			width: 100%;
+			padding: 40px 30px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			background-color: #f1f1f1;
+		}
+		.review{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 45%;
+			height: 65vh;
+			box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5); 
+			background-color: white;
+		}
+		.review p{
+			width: 90%;
+			font-weight: bold;
+			font-family: 'Didact Gothic', sans-serif; 
+		}
+		.reviewer{
+			font-size: 100%; 
+			font-weight: normal;
+			font-family: 'Didact Gothic', sans-serif;
+		}
+		.reviewerFunction{
+			font-size: 90%;
+			font-weight: normal;
+			font-family: 'Nixie One', cursive;
+		}
+		.quotesOpen{
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			width: 5%;
+		}
+		.quotesClosed{
+			position: absolute;
+			bottom: 25%;
+			right: 30px;
+			width: 5%;
+		}
+		#numbers{
+			width: 100%;
+			height: 45vh;
+			display: flex;
+			justify-content: space-around;
+			background-color: white;
+			margin-top: 50px;
+		}
+		.numbersInner{
+			position: relative;
+			width: 23%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.digits{
+			position: absolute;
+			top: 5%;
+			font-size: 600%;
+			width: 100%;
+			line-height: 0;
+			margin-top: 30%;
+			text-align: center;
+			font-family: 'Ultra', serif;
+			color: lightblue;
+		}
+		.plus{			
+			font-size: 80%;
+			font-family: Arial;
+		}
+		.source{
+			position: relative;
+			top: 10%; 
+			width: 100%;
+			margin: 0;
+			text-align: center;
+			font-weight: bold;
+			font-family: 'Didact Gothic', sans-serif;
+		}
+		.year{
+			position: relative;
+			top: 10%;
+			width: 100%;
+			text-align: center;
+			margin: 0;
+			font-family: 'Didact Gothic', sans-serif;
+		}
+		@media only screen and (max-width: 815px){
+
+			#topWrapper{
+				width: 100%;
+				height: initial;
+				flex-wrap: wrap;
+			}
+			#topLeft{
+				width: 100%;
+				height: 25vh;
+			}
+			#titleContainer{
+				font-size: 200%;
+			}
+			#topRight{
+				width: 100%;
+			}
+			#topRight p{
+				font-size: 200%;
+			}
+
+			/* Main section mobile */
+
+			.main{
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+			}
+			.innerLeft{
+				width: 100%;
+				height: auto;
+			}
+			span{
+				font-size: 120%;
+				font-weight: bold;
+				font-family: Arial;
+			}
+			p{
+				width: 90%;
+				font-size: 100%;
+				font-family: 'Quicksand', sans-serif;
+			}
+			.innerRight{
+				width: 100%;
+				height: auto;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+			#innerRightImg{
+				width: 60%;
+				display: flex;
+				align-items: center;
+			}
+			#innerRightImg img{
+				width: 100%;
+			}
+			#innerRightTxt{
+				width: 40%;
+				height: 100%;
+			}
+			.revenue{
+				width: 100%;
+				height: 50%; 
+			}
+			.revenue span{
+				font-size: 230%;
+			}
+			.revenue p{
+				position: relative; 
+				bottom: 50%;
+			}
+			.titleInner{
+				margin: 20px 0;
+				font-size: 180%;
+			}
+			.review{
+				width: 100%;
+				height: auto;
+				padding: 10px 0;
+				margin-top: 20px;
+			}
+			.review p{
+				width: 80%;
+				height: 80%;
+				font-size: 90%;
+				font-weight: bold;
+				padding-bottom: 15px;
+			}
+			.quotesOpen{
+				top: 15px;
+				left: 15px;
+			}
+			.quotesClosed{
+				right: 15px;
+				bottom: 40px;
+			}
+
+			/* Bottom section with numbers */
+
+			#numbers{
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-wrap: wrap;
+				background-color: white;
+				margin-top: 50px;
+			}
+			.numbersInner{
+				width: 100%; 
+				height: 20vh;
+				padding-top: 30px;
+			}
+			.digits{
+				top: 20%;
+				font-size: 500%;				
+				margin-top: 10px;
+			}
+			.source, .year{
+				top: 20px;
+			}
+		}
